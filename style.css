@@ -8,9 +8,31 @@ h1 {
   text-align: center;
   color: blueviolet;
   margin: 30px 0;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 h2 {
   text-align: center;
+}
+select {
+  margin-block-start: 2%;
+  margin-left: 45%;
+  color: blueviolet;
+  position: center;
+  background: transparent;
+  border-color: blue;
+  border-radius: 10px;
+  font-size: 1em;
+  height: 30px;
+  padding: 5px;
+  width: 150px;
+}
+div {
+  margin-block-start: 2%;
+  margin-left: 40%;
+  position: center;
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px;
+  width: 150px;
 }
