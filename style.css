@@ -1,38 +1,78 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(0deg, #0006, #0006), url("img/pokemon.jpg");
 }
 
 h1 {
   text-align: center;
-  color: blueviolet;
+  color: crimson;
   margin: 30px 0;
-  font-size: 2em;
+  font-size: 2.4em;
+}
+
+h1 span {
+  color: #d2d2d2;
 }
 
 h2 {
   text-align: center;
+  color: #d2d2d2;
 }
+
+#titulo {
+  text-align: center;
+  color: crimson;
+  margin-top: 10px;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+}
+
+#titulo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* color: wheat; */
+  /* background-color: wheat; */
+  border: 1px solid #fff;
+  bottom: -10px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 select {
-  margin-block-start: 2%;
-  margin-left: 45%;
-  color: blueviolet;
-  position: center;
-  background: transparent;
-  border-color: blue;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #f2f2f2;
+  border-color: crimson;
   border-radius: 10px;
-  font-size: 1em;
-  height: 30px;
+  font-size: 1.3em;
   padding: 5px;
-  width: 150px;
+  margin: 30px 0;
 }
-div {
-  margin-block-start: 2%;
-  margin-left: 40%;
-  position: center;
-  border-radius: 10px;
-  height: 30px;
-  padding: 5px;
-  width: 150px;
+
+select option {
+  color: #d2d2d2;
+  background-color: #001;
+  font-size: 0.8em;
+}
+
+#card {
+  /* border: 1px solid blueviolet; */
+  background-color: #3332;
+  padding: 20px;
+  backdrop-filter: blur(20px);
 }

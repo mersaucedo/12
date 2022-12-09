@@ -14,13 +14,16 @@ async function clickSelccionar() {
     .join("");
 }
 const options = document.getElementById("#pokemon option");
+
 document.addEventListener("change", (e) => {
   if (e.target.matches("#pokemon")) {
     cambiarImg(e.target.value);
+    ponerText(e.target.value);
     e.preventDefault();
     return;
   }
 });
+
 clickSelccionar();
 async function cambiarImg(pokemon = "") {
   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -36,3 +39,10 @@ async function cambiarImg(pokemon = "") {
     `;
 }
 cambiarImg("bulbasaur");
+
+parrafo = document.getElementById("titulo");
+
+function ponerText(arg) {
+  parrafo.textContent = arg;
+  console.log(arg);
+}
